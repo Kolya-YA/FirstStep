@@ -1,4 +1,4 @@
-﻿/* ---------------------------------------
+/* ---------------------------------------
  * -- Reset styles --
  * -------------------------------------*/
 html, body {
@@ -9,25 +9,37 @@ html, body {
 	background: #fff;
 	font: normal 12px Arial;}
 
-  h4 {
-  font-family: 'PT Sans', sans-serif;}
-
 div, p, ol, ul, li, dl, dd, dt, h1, h2, h3, h4, h5, h6, form, input, textarea, select, form, section, article, nav {
 	margin: 0;
-	padding: 0;}
+	padding: 0;
+}
 
-input[disabled]{
+input[disabled] {
 	background:#CCC;
 	color:#000;
-	}
+}
 
 img {border: 0;}
 
-a {outline: none; text-decoration: underline; color: #117dab;}
-a:hover {outline: none; color: #dd1f00;}
+
 /* ---------------------------------------
  * End of -- Reset styles --
  * -------------------------------------*/
+
+h4 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+a {
+    outline: none;
+    text-decoration: underline;
+    color: #117dab;
+}
+
+a:hover {
+    outline: none;
+    color: #dd1f00;
+}
 
 /* ---------------------------------------
  * -- Start E-orders Styles --
