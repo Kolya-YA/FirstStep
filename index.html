@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <title>Neu GurFoto</title>
-  <meta name="description" content="GurPhoto – умеренное фотоагентсво">
+  <meta name="description" content="GurPhoto – умеренное фотоагентство">
   <meta name="author" content="WebStrom">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
@@ -17,12 +17,22 @@
 
 <body>
   <!-- <script src="js/scripts.js"></script> -->
-  <header>
+  <header class="page-header">
 
-    <div class="header-logo">
+    <div class="page-header__logo">
+      <img src="img/logo-h.jpg" width="50" height="200" alt="GurPhoto — фотоагентство для всех"
     </div>
 
     <nav class="header-nav">
+      <button class="header-nav__toggle">Закрыть меню</button>
+      <div class="header-nav__warper">
+        <ul class="header-nav__list">
+          <li class="headefr-nav__item header-nav__item--active">Главная</li>
+          <li class="headefr-nav__item header-nav__item--active">Галерея</li>
+          <li class="headefr-nav__item header-nav__item--active">Клиенты</li>
+          <li class="headefr-nav__item header-nav__item--active">О нас</li>
+        </ul>
+      </div>
     </nav>
 
     <div class="header-links">
