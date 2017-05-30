@@ -28,18 +28,15 @@ font-family: 'Roboto Condensed', sans-serif;
 
 /* --- /SVG icons --- */
 
-* {
-  font-family: 'Roboto', sans-serif;
-}
-
 ul {
   padding: 0;
   margin: 0;
 }
 
-
 body {
   background-color: darkkhaki;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   display: flex;
   flex-direction: column;
   margin: 0 5px;
@@ -149,7 +146,7 @@ body {
   font-weight: bold;
   margin-bottom: 10px;
   font-size: 20px;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Comfortaa', cursive;
 }
 
 .footer-contacts__adr,
@@ -218,12 +215,6 @@ body {
   .page-header-wrapper {
     flex-direction: column-reverse;
   }
-  .page-header__logo--2line {
-    display: none;
-  }
-  .page-header__logo--1line {
-    display: inline;
-  }
 
   .footer {
     margin: 0 auto;
@@ -255,10 +246,15 @@ body {
 
 @media (min-width: 960px) {
 
+  .page-header__logo--2line {
+    display: none;
+  }
+  .page-header__logo--1line {
+    display: inline;
+  }
 
   .main-content-about p {
     column-count: 2;
-
   }
 
   .footer {
