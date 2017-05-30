@@ -39,7 +39,7 @@ body {
   font-weight: 300;
   display: flex;
   flex-direction: column;
-  margin: 0 5px;
+  margin: 0 5px 5px;
 }
 
 .page-header {
@@ -93,19 +93,24 @@ body {
   margin: 0 auto;
 }
 
-.portfolio-photo {
-  position: relative;
-  overflow: hidden;
-/*
-  max-width: 350px;
-  max-height: 350px;
-*/
-  flex: 0 1 350px;
-  margin-bottom: 10px;
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .portfolio-photo {
+  position: relative;
+  overflow: hidden;
+
+  flex: 1 0 350px;
+  max-width: 550px;
+  margin: 5px;
+}
+
+.portfolio-photo img {
   width: 100%;
+  height: 100%;
 }
 
 .portfolio-photo-caption {
@@ -122,13 +127,6 @@ body {
 
 .portfolio-photo:hover .portfolio-photo-caption {
   top: 0px;
-}
-
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
 }
 
 .footer {
