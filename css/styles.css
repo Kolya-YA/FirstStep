@@ -68,8 +68,8 @@ body {
 .page-header__logo--2line {
   display: inline;
 }
-.header-nav {
 
+.header-nav {
   text-transform: uppercase;
   width: auto;
   font-family: 'Roboto Condensed', sans-serif;
@@ -77,21 +77,9 @@ body {
   background-color: #aaa;
 }
 
-.header-nav__list {
-  list-style: none;
-}
-
-.header-nav__list--opened {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 70px;
-  z-index: 10;
-}
-
 .header-nav__toggle {
   position: absolute;
-  z-index: 10;
+  z-index: 20;
   top: 0;
   right: 0;
   width: 70px;
@@ -136,6 +124,15 @@ body {
   transform: rotate(-45deg);
 }
 
+.header-nav__list {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 70px;
+  z-index: 10;
+}
+
 .header-nav__link {
   display: block;
   padding: 15px 20px;
@@ -146,8 +143,25 @@ body {
   border-bottom: 1px solid #ccc;
   font-weight: 400;
   color: #777;
-
 }
+
+.header-nav__list--closed {
+  position: static;
+}
+.header-nav__list--closed .header-nav__item {
+  display: none;
+}
+
+.header-nav__list--closed .header-nav__item--active {
+  display: block;
+  text-align: center;
+}
+
+.header-nav__list--closed .header-nav__link {
+  border: 0;
+}
+
+
 .main-content {
   max-width: 1445px;
   margin: 0 auto;
