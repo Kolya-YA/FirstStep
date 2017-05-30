@@ -251,6 +251,10 @@ body {
 @media (min-width: 960px) {
 
 
+  .main-content-about p {
+    column-count: 2;
+
+  }
 
   .footer {
     flex-wrap: nowrap;
