@@ -1,13 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
 
   <title>Neu GurFoto</title>
-  <meta name="description" content="GurPhoto – умеренное фотоагентство">
+  <meta name="description" content="GurPhoto – фотографическое агентство">
   <meta name="author" content="WebStrom">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Roboto+Slab:400,700" rel="stylesheet">
 
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
   <!--[if lt IE 9]>
@@ -18,40 +21,124 @@
 <body>
   <!-- <script src="js/scripts.js"></script> -->
   <header class="page-header">
-
-    <div class="page-header__logo">
-      <img src="img/logo-h.jpg" width="50" height="200" alt="GurPhoto — фотоагентство для всех"
-    </div>
-
-    <nav class="header-nav">
-      <button class="header-nav__toggle">Закрыть меню</button>
-      <div class="header-nav__warper">
-        <ul class="header-nav__list">
-          <li class="headefr-nav__item header-nav__item--active">Главная</li>
-          <li class="headefr-nav__item header-nav__item--active">Галерея</li>
-          <li class="headefr-nav__item header-nav__item--active">Клиенты</li>
-          <li class="headefr-nav__item header-nav__item--active">О нас</li>
-        </ul>
+    <div class="page-header-wrapper">
+      <div class="page-header__logo">
+        <h1>GurPhoto.ru<span class="page-header__logo--2line"><br></span><span class="page-header__logo--1line"> — </span>фотографическое агентство</h1>
       </div>
-    </nav>
-
-    <div class="header-links">
+      <nav class="header-nav">
+        <button class="header-nav--toggle">Закрыть меню</button>
+        <ul class="header-nav__list">
+          <li class="header-nav__item">Главная</li>
+          <li class="header-nav__item">Виртуальные туры</li>
+          <li class="header-nav__item">Google панорамы</li>
+          <li class="header-nav__item header-nav__item--active">Фотографии</li>
+          <li class="header-nav__item">Блог</li>
+          <li class="header-nav__item">Цены</li>
+          <li class="header-nav__item">Контакты</li>
+        </ul>
+      </nav>
     </div>
-
   </header>
 
+  <section class="main-content">
+    <div class="portfolio">
 
-  <footer>
+      <div class="portfolio-photo">
+        <img src="http://placehold.it/350x350#">
+        <div class="portfolio-photo-caption">
+          <h2>Название фото</h2>
+          <hr>
+          <p>Описание фотграфии</p>
+          <a href="http://placehold.it/350x200#">Сылка на страницу фото</a>
+        </div>
+      </div>
 
-    <div class="footer-nav">
+      <div class="portfolio-photo">
+        <img src="http://placehold.it/350x350#">
+        <div class="portfolio-photo-caption">
+          <h2>Название фото</h2>
+          <hr>
+          <p>Описание фотграфии</p>
+          <a href="http://placehold.it/350x200#">Сылка на страницу фото</a>
+        </div>
+      </div>
+
+      <div class="portfolio-photo">
+        <img src="http://placehold.it/350x350#">
+        <div class="portfolio-photo-caption">
+          <h2>Название фото</h2>
+          <hr>
+          <p>Описание фотграфии</p>
+          <a href="http://placehold.it/350x200#">Сылка на страницу фото</a>
+        </div>
+      </div>
+
+      <div class="portfolio-photo">
+        <img src="http://placehold.it/350x350#">
+        <div class="portfolio-photo-caption">
+          <h2>Название фото</h2>
+          <hr>
+          <p>Описание фотграфии</p>
+          <a href="http://placehold.it/350x200#">Сылка на страницу фото</a>
+        </div>
+      </div>
+
+      <div class="portfolio-photo">
+        <img src="http://placehold.it/350x350#">
+        <div class="portfolio-photo-caption">
+          <h2>Название фото</h2>
+          <hr>
+          <p>Описание фотграфии</p>
+          <a href="http://placehold.it/350x200#">Сылка на страницу фото</a>
+        </div>
+      </div>
+
     </div>
 
+  </section>
+
+  <footer class="footer">
+    <div class="footer-contacts">
+      <p class="footer-contacts__title">GurFoto.ru<span> — фотографическое агентство</span></p>
+      <p class="footer-contacts__adr">г.Ростов-на-Дону</p>
+      <a class="footer-contacts__email" href="mailto:sample@gurfoto.ru">sample@gurfoto.ru</a>
+      <a class="footer-contacts__phone" href="tel:+78632223322">
+        <span>Тел.: </span>
+        +7 (863) 222-33-22
+      </a>
+    </div>
+    <div class="footer-social">
+      <p class="footer-social__title">Давайте дружить!</p>
+      <div class="footer-social__icons">
+          <a class="footer-social__btn" href="#">
+            Facebook
+            <i class="icon-facebook-filled">
+            <svg>
+              <use xlink:href="img/Icons8.svg#icon-facebook-filled"></use>
+            </svg></i>
+          </a>
+          <a class="footer-social__btn" href="#">
+            Instagram
+            <i class="icon-instagram-filled">
+            <svg>
+              <use xlink:href="img/Icons8.svg#icon-instagram-filled"></use>
+            </svg></i>
+          </a>
+          <a class="footer-social__btn" href="#">
+            VK.com
+            <i class="icon-vk-com-filled">
+            <svg>
+              <use xlink:href="img/Icons8.svg#icon-vk-com-filled"></use>
+            </svg></i>
+          </a>
+      </div>
+    </div>
     <div class="footer-copyright">
+      <p class="footer-copyright--title">Разработано:
+</p>
+      <a class="footer-copyright--btn" href="#">WebStrom
+</a>
     </div>
-
-    <div class="fotter-links">
-    </div>
-
   </footer>
 
 </body>
