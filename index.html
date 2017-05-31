@@ -26,9 +26,9 @@
       <div class="page-header__logo">
         <h1>GurPhoto.ru<span class="page-header__logo--2line"><br></span><span class="page-header__logo--1line"> — </span>фотографическое агентство</h1>
       </div>
-      <nav class="header-nav">
-        <div class="header-nav__toggle header-nav__toggle--closed"></div>
-        <ul class="header-nav__list header-nav__list--closed">
+      <nav class="header-nav header-nav--closed">
+        <div class="header-nav__toggle"></div>
+        <ul class="header-nav__list">
           <li class="header-nav__item header-nav__item--active">
             <a class="header-nav__link" href="#">Главная</a>
           </li>
@@ -53,6 +53,22 @@
         </ul>
       </nav>
     </div>
+
+    <script>
+      var navMain = document.querySelector('.header-nav');
+      var navToggle = document.querySelector('.header-nav__toggle');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('header-nav--closed')) {
+          navMain.classList.remove('header-nav--closed');
+          navMain.classList.add('header-nav--opened');
+        } else {
+          navMain.classList.add('header-nav--closed');
+          navMain.classList.remove('header-nav--opened');
+        }
+      });
+    </script>
+
   </header>
 
   <section class="main-content">
@@ -86,7 +102,6 @@
           <p>Описание фотграфии</p>
           <a href="//drive.google.com/uc?export=view&id=0B_SF8FG5C70ddFZwYlhHblBMVzQ">Сылка на страницу фото</a>
         </div>
-
       </div>
 
       <div class="portfolio-photo">
@@ -98,6 +113,7 @@
           <a href="//drive.google.com/uc?export=view&id=0B_SF8FG5C70dTTlFOC1VS0NBM2M">Сылка на страницу фото</a>
         </div>
       </div>
+
       <div class="portfolio-photo">
         <img src="img/photo/1B7W1161q.jpg">
         <div class="portfolio-photo-caption">
@@ -117,6 +133,7 @@
           <a href="img/photo/1B7W1889.jpg">Сылка на страницу фото</a>
         </div>
       </div>
+
       <div class="portfolio-photo">
         <img src="img/photo/1B7W3982-1q.jpg">
         <div class="portfolio-photo-caption">
@@ -136,6 +153,7 @@
           <a href="img/photo/1B7W8491.jpg">Сылка на страницу фото</a>
         </div>
       </div>
+
       <div class="portfolio-photo">
         <img src="img/photo/1B7W9088q.jpg">
         <div class="portfolio-photo-caption">
@@ -155,6 +173,7 @@
           <a href="/img/photo/1B7W9811.jpg">Сылка на страницу фото</a>
         </div>
       </div>
+
       <div class="portfolio-photo">
         <img src="img/photo/Panorama10q.jpg">
         <div class="portfolio-photo-caption">
@@ -174,8 +193,8 @@
           <a href="img/photo/temple1.jpg">Сылка на страницу фото</a>
         </div>
       </div>
-
     </div>
+
     <article class="main-content-about">
       <h1>Агентство GurFoto.Ru | Мир профессиональной фотографии</h1>
       <p>Несколько лет назад, несколько фотографов, собравшись вместе несколько раз, решили создать проект, который позволил бы реализовать профессиональные амбиции. Так появилось фотографическое агентство GurFoto.Ru<br> Прошло еще несколько лет и вот сейчас мы можем уверенно говорить о том, что проект состоялся! С одной стороны наше агентство предлагает довольно большой перечень услуг, с другой стороны, участники проекта реализуют свои творческие идеи и весьма успешно.<br> Очень важным направлением для нас стало создание мультимедийных продуктов: виртуальных туров и участие в проекте Google Просмотр улиц|Сертифицировано. Традиционная фотография в самых разных жанрах: архитектурная съемка, фото интерьеров, предметная съемка и репортаж.</p>
@@ -187,8 +206,8 @@
       <p>Понятие фотографии было сильно девальвировано с появлением, сначала, компактных фотокамер, так называемых «мыльниц», а после — многопиксельных смартфонов… Большинство людей просто не знает, как выглядит фотография, созданная фотографом. Если интересно увидеть разницу, посмотрите то, как мы представляем ее себе: речь идет не о шедеврах, а лишь о качественном изображении реальности. Добро пожаловать в мир профессиональной фотографии!</p>
     </article>
 
-    </div>
   </section>
+
   <footer class="footer">
     <div class="footer-contacts">
       <p class="footer-contacts__title">GurFoto.ru<span> — фотографическое агентство</span></p>
@@ -227,7 +246,7 @@
     <div class="footer-copyright">
       <p class="footer-copyright--title">Разработано:
       </p>
-      <a class="footer-copyright--btn" href="#">WebStrom</a>
+      <a class="footer-copyright__btn" href="#">WebStrom</a>
     </div>
   </footer>
 </body>
