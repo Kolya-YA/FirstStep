@@ -79,7 +79,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   position: relative;
   background-color: #aaa;
-  min-height: 51px;
+  min-height: 50px;
 }
 
 .header-nav__toggle {
@@ -106,7 +106,7 @@ body {
   color: #ddd;
 }
 
-.header-nav__item--active .header-nav__link {
+.header-nav--closed .header-nav__item--active .header-nav__link {
   border-bottom: 3px solid #555;
 }
 
@@ -192,7 +192,7 @@ body {
     text-align: center;
   }
 
-  .header-nav--closed .header-nav__link {
+  .header-nav--closed .header-nav__item--active .header-nav__link {
     border: 0;
   }
 
