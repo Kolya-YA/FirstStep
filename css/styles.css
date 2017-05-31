@@ -49,7 +49,7 @@ body {
 
 .page-header-wrapper {
   display:flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   position: relative;
   max-width: 1445px;
   margin: 0 auto;
@@ -111,6 +111,10 @@ body {
 }
 
 @media (max-width: 960px) {
+
+  .page-header-wrapper {
+    flex-direction: column;
+  }
 
   .header-nav__toggle {
     display: block;
@@ -322,10 +326,6 @@ body {
 }
 
 @media (min-width: 710px) {
-
-  .page-header-wrapper {
-    flex-direction: column-reverse;
-  }
 
   .footer {
     margin: 0 auto;
