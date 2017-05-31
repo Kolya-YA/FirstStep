@@ -44,7 +44,7 @@ body {
 
 .page-header {
   margin-bottom: 20px;
-  background-color: #bbb;
+  background-color: #ddd;
 }
 
 .page-header-wrapper {
@@ -90,7 +90,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  background-color: #ddd;
+  background-color: #bbb;
 }
 
 .header-nav__link {
@@ -103,7 +103,7 @@ body {
 
 .header-nav__link:hover {
   background-color: #777;
-  color: #ddd;
+  color: #999;
 }
 
 .header-nav--closed .header-nav__item--active .header-nav__link {
