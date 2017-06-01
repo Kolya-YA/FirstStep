@@ -28,12 +28,17 @@ font-family: 'Roboto Condensed', sans-serif;
 
 /* --- /SVG icons --- */
 
+html {
+  height: 100%;
+}
+
 ul {
   padding: 0;
   margin: 0;
 }
 
 body {
+  height: 100%;
   background-color: #eee;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -207,6 +212,7 @@ body {
 }
 
 .main-content {
+  flex-grow: 1;
   max-width: 1445px;
   margin: 0 auto;
 }
@@ -258,8 +264,6 @@ body {
 }
 
 .footer {
-  margin-top: 20px;
-/*  background-color: lightgray;*/
 }
 
 .footer-contacts {
