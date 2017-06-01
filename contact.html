@@ -73,28 +73,38 @@
 
   <section class="main-content">
 
-    <form action="https://formspree.io/gurfoto@gurfoto.ru"
-      method="POST">
-      <ul class="contact-form">
-        <li class=contact-form-field>
-          <label for="name">Имя</label>
-          <input id="name" type="text" name="name">
-        </li>
-        <li class=contact-form-field>
-          <label for="email">E-mail</label>
-          <input id="email" type="email" name="_replyto">
-        </li>
-        <li class=contact-form-field>
-          <label for="phone">Телефон</label>
-          <input id="phone" type="phone" name="phone">
-        </li>
-        <li class=contact-form-field>
-          <label for="msg">Ваше сообщение</label>
-          <textarea id="msg" name="message"></textarea>
-        </li>
-      </ul>
-      <button type="submit">Отправить</button>
-    </form>
+    <div class="contact">
+      <form class="contact-form" action="https://formspree.io/gurfoto@gurfoto.ru"
+        method="POST">
+        <h2>Оставьте сообщение</h2>
+        <ul class="contact-form-list">
+          <li class=contact-form-field>
+            <label for="name">Имя</label>
+            <input id="name" type="text" name="name" placeholder="Введите ваше имя" required>
+          </li>
+          <li class=contact-form-field>
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="_replyto" placeholder="Введите ваш e-mail" required>
+          </li>
+          <li class=contact-form-field>
+            <label for="phone">Телефон</label>
+            <input id="phone" type="phone" name="phone" placeholder="Введите ваш номер телефона">
+          </li>
+          <li class=contact-form-field>
+            <label for="msg">Ваше сообщение</label>
+            <textarea id="msg" name="message" placeholder="Введите ваше сообщение" rows="6" required></textarea>
+          </li>
+        </ul>
+        <button type="submit">Отправить</button>
+      </form>
+
+      <div class="contact-text">
+        <h2>Мы ждем вашего письма.</h2>
+        <img src="img/P9160065.JPG" alt="" width="200" height="200">
+        <p>Вы нам пишите, мы всегда очень внимательно слушаем ваши письма. Нам это очень надо. Мы их рассматриваем Очень, очень надо. Мы их нюхаем. Пишите ваши письма. Рисуйте ваши мысли. Идите стройным шагом. Танцуйте к нам сюда.
+        </p>
+      </div>
+    </div>
 
   </section>
 
