@@ -383,6 +383,9 @@ body {
     font-size: 1em;
   }
 
+  .header-nav__link:hover {
+  padding-bottom: 20px;
+}
   .main-content-about p {
     column-count: 2;
   }
