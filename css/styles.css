@@ -468,7 +468,7 @@ body {
 .contact-form-field input,
 .contact-form textarea {
   border: 0;
-  border-bottom: 1px solid #777;
+  border-bottom: 2px solid #bbb;
   background-color: #eee;
   margin-bottom: 10px;
   padding: 6px 8px 5px;
@@ -497,7 +497,7 @@ body {
 .contact-form-field input:focus,
 .contact-form-field textarea:focus {
   outline: 0;
-  border-bottom: 3px solid #777;
+  border-bottom: 2px solid #777;
 }
 
 .contact-form button {
@@ -507,6 +507,16 @@ body {
   border-radius: 2px;
   background-color: #ccc;
   box-shadow: 0 0 10px 3px #bbb;
+}
+
+.contact-form button:hover {
+  background-color: #bbb;
+}
+
+.contact-form button:active {
+  outline: 0;
+  background-color: #bbb;
+  box-shadow: none;
 }
 
 .contact-text img {
