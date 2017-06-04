@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>GurFoto.ru — фотографическое агентство</title>
+  <meta name="description" content="GurPhoto – фотографическое агентство">
+  <meta name="author" content="WebStrom">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto+Condensed:300,400|Roboto:300,300i,400&amp;subset=cyrillic" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!-- <script src="js/scripts.js"></script> -->
+  <header class="page-header">
+    <div class="page-header-wrapper">
+      <div class="page-header__logo">
+        <h1>GurPhoto.ru<span class="page-header__logo--2line"><br></span><span class="page-header__logo--1line"> — </span><span class="page-header__logo--fotoag">фотографическое агентство</span></h1>
+      </div>
+      <nav class="header-nav header-nav--closed">
+        <div class="header-nav__toggle"></div>
+        <ul class="header-nav__list">
+          <li class="header-nav__item header-nav__item--active">
+            <a class="header-nav__link">Главная</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Виртуальные туры</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Google панорамы</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Фотографии</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Блог</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#">Цены</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="contact.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script>
+      var navMain = document.querySelector('.header-nav');
+      var navToggle = document.querySelector('.header-nav__toggle');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('header-nav--closed')) {
+          navMain.classList.remove('header-nav--closed');
+          navMain.classList.add('header-nav--opened');
+        } else {
+          navMain.classList.add('header-nav--closed');
+          navMain.classList.remove('header-nav--opened');
+        }
+      });
+    </script>
+
+  </header>
+
+  <section class="main-content">
+
+      <article class="">
+
+        <a href="#" class="post-thumbnail">
+          <img width="704" height="726" src="#" class="post-thumbnail-img">
+        </a>
+
+  <div class="content-and-tags">
+
+    <div class="module-content">
+
+      <header class="article-card-header">
+
+        <div class="article-card-title">
+          <h2 class="">
+            <a href="#" class="article-card-header read-article">Непростое название замысловатой статьи о промежуточных итогах внезапного полуфинала.</a>
+          </h2>
+        </div>
+
+        <div class="author-date">
+          <a href="#">#</a>
+          <time datetime="2017-05-30">May 30, 2017</time>
+          <span class="author">Автор: </span>
+          <a href="#">
+            <span class="p-author">Тот самый Юрий</span>
+          </a>
+        </div>
+
+      </header>
+
+      <div class="text-block">
+        <p>As front-end developers, we're well aware that different browsers (and versions) support different web platform features. We make <em>choices</em> based on the support of those features balanced with what analytics tell us about what browsers our users use. For example, if our Google Analytics tell us only 0.01% of users are left on IE 9, perhaps we'll decide it's OK to start using Flexbox and <code>.classList</code>.</p>
+        <p>
+          <a href="#" class="more-link">
+          <span aria-label="Continue reading Browserslist is a Good Idea">(more&hellip;)</span></a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="tags">
+      <svg class="icon-tag" width="12px" height="12px"><use xlink:href="#icon-tag"></use></svg><a href="https://css-tricks.com/tag/autoprefixer/" rel="tag">autoprefixer</a>
+      <a href="https://css-tricks.com/tag/babel/" rel="tag">babel</a>
+      <a href="https://css-tricks.com/tag/browserlist/" rel="tag">browserlist</a>
+      <a href="https://css-tricks.com/tag/eslint/" rel="tag">eslint</a>
+      <a href="https://css-tricks.com/tag/stylelint/" rel="tag">stylelint</a>
+    </div>
+
+  </div>
+
+</article>
+
+  </section>
+
+  <footer class="footer">
+    <div class="footer-contacts">
+      <p class="footer-contacts__title">GurFoto.ru<span> — фотографическое агентство</span></p>
+      <p class="footer-contacts__adr">г.Ростов-на-Дону</p>
+      <a class="footer-contacts__email" href="mailto:sample@gurfoto.ru">sample@gurfoto.ru</a>
+      <a class="footer-contacts__phone" href="tel:+78632223322">
+        <span>Тел.: </span> +7 (863) 222-33-22
+      </a>
+    </div>
+    <div class="footer-social">
+      <p class="footer-social__title">Давайте дружить!</p>
+      <div class="footer-social__icons">
+        <a class="footer-social__btn" href="#">
+            Facebook
+            <i class="icon-facebook-filled">
+            <svg>
+              <use xlink:href="img/Icons8.svg#icon-facebook-filled"></use>
+            </svg></i>
+          </a>
+        <a class="footer-social__btn" href="#">
+            Instagram
+            <i class="icon-instagram-filled">
+            <svg>
+              <use xlink:href="img/Icons8.svg#icon-instagram-filled"></use>
+            </svg></i>
+          </a>
+        <a class="footer-social__btn" href="#">
+            VK.com
+            <i class="icon-vk-com-filled">
+            <svg>
+              <use xlink:href="img/Icons8.svg#icon-vk-com-filled"></use>
+            </svg></i>
+          </a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p class="footer-copyright--title">Разработано:
+      </p>
+      <a class="footer-copyright__btn" href="#">WebStrom</a>
+    </div>
+  </footer>
+</body>
+
+</html>
