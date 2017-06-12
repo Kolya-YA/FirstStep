@@ -532,7 +532,8 @@ body {
 .blog-previw-warper {
   display: flex;
   flex-wrap: wrap;
-  margin: auto -5px;
+  justify-content: center;
+  margin: 0 -1.5%;
 }
 
 .blog-previw-warper .blog-preview {
@@ -543,9 +544,17 @@ body {
 
 .blog-article-preview {
   background-color: #fff;
-  flex: 1 0 310px;
-  max-width: 720px;
-  margin: 5px;
+  flex: 1 1 350px;
+  min-width: 310px;
+  max-width: 550px;
+  margin: 1.5%;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+  transition: all 0.6s cubic-bezier(0.165,0.84,0.44,1);
+}
+
+.blog-article-preview:hover {
+  transform: translate(0, -6px);
+  box-shadow: 0px 30px 30px 0px rgba(0,0,0,0.15);
 }
 
 .article-card-header {
