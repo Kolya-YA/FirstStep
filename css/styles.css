@@ -481,22 +481,6 @@ body {
   list-style: none;
 }
 
-/*
-.contact-form-field input::after,
-.contact-form textarea::after {
-    content: "";
-    position: absolute;
-    top: 32px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: rgba(0, 0, 0, .2);
-    transform: translateY(10px) scale(1.2);
-    opacity: 1;
-    transition: .1s;
-}
-*/
-
 .contact-form-field input:focus,
 .contact-form-field textarea:focus {
   outline: 0;
@@ -567,14 +551,14 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
-  padding: 8px;
+  padding: 10px;
   box-sizing: border-box;
   overflow: hidden;
   color: #fff;
   z-index: 5;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .2);
 }
 
 .article-card-header img {
@@ -586,7 +570,7 @@ body {
 
 .blog-caption h1 {
   font-size: 1.3em;
-  margin: auto auto 8px;
+  margin: auto auto 10px;
   text-align: center;
 }
 
@@ -595,7 +579,6 @@ body {
   right: 0;
   top: 0;
   padding: 5px;
-  background-color: #777;
 }
 
 .blog-caption .blog-article-tags {
@@ -603,7 +586,12 @@ body {
   left: 0;
   top: 0;
   padding: 5px;
-  text-shadow: 0 0 20px #000;
+}
+
+.blog-caption h1,
+.blog-caption time,
+.blog-caption .blog-article-tags {
+  text-shadow: 0 0 1px #000, 0 0 30px #000;
 }
 
 .blog-caption .blog-article-tags::before {
@@ -615,24 +603,37 @@ body {
   text-decoration: none;
 }
 
-.blog-caption .author {
-  font-style: italic;
-}
-
-.blog-caption .author span {
-  display: none;
-}
-
 .blog-article-preview .text-block {
-  padding: 8px;
+  padding: 10px;
 }
 
 .blog-article-preview .text-block  p {
   margin: 0;
 }
 
-.blog-article-preview .text-block .more-link {
+.blog-article-preview .text-block .more-btn {
   display: block;
-  margin-top: 5px;
-  text-align: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 24px;
+  color: #333;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: center;
+  padding: 8px 40px;
+  border: 1px solid #777;
+  border-radius: 2px;
+  background-color: #ccc;
+  box-shadow: 0 0 10px 3px #bbb;
+}
+
+.blog-article-preview .text-block .more-btn:hover {
+  background-color: #bbb;
+}
+
+.blog-article-preview .text-block .more-btn:active {
+  outline: 0;
+  background-color: #bbb;
+  box-shadow: none;
 }
